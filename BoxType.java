@@ -1,0 +1,3 @@
+enum BoxType{
+   CS,PHYSICS,CHEM,BIO,ELEC,MECH;
+}
