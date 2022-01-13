@@ -1,0 +1,24 @@
+package com.xworkz.tour;
+
+public class Test {
+	
+	
+	
+	
+	
+
+	public static void main(String[] args) {
+		String str1="2";
+		String str2="z";
+		String str3="y";
+		
+		str1.toLowerCase();
+		str3.replace('y', 'z');
+		System.out.print((str1.equals(str2))+","+(str2.equals(str3)));
+		
+
+		
+
+	}
+
+}

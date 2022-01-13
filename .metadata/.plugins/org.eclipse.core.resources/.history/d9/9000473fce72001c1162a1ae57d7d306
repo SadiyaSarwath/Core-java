@@ -1,0 +1,19 @@
+package com.xworkz.tour;
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		
+		StringBuilder s1=new  StringBuilder("1");
+		StringBuilder s2=new  StringBuilder("1");
+		String s3=s2.substring(0);
+		char s4=s1.charAt(0);
+		String s5=s4+"".intern();
+		String s6=s5.concat(s3.concat(s4+"").replace("1", "2"));
+		System.out.println(s6);
+		
+
+	}
+
+}
