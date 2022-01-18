@@ -1,0 +1,81 @@
+package com.xworkz.tour.entity;
+
+import java.io.Serializable;
+
+public class WebsiteEntity implements Serializable {
+	private int wid;
+	private String name;
+	private String webURL;
+	private int since;
+	private String domain;
+	private String owner;
+
+	public WebsiteEntity() {
+
+	}
+
+	public WebsiteEntity(int wid, String name, String webURL, int since, String domain, String owner) {
+		super();
+		this.wid = wid;
+		this.name = name;
+		this.webURL = webURL;
+		this.since = since;
+		this.domain = domain;
+		this.owner = owner;
+	}
+
+	public int getWid() {
+		return wid;
+	}
+
+	public void setWid(int wid) {
+		this.wid = wid;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getWebURL() {
+		return webURL;
+	}
+
+	public void setWebURL(String webURL) {
+		this.webURL = webURL;
+	}
+
+	public int getSince() {
+		return since;
+	}
+
+	public void setSince(int since) {
+		this.since = since;
+	}
+
+	public String getDomain() {
+		return domain;
+	}
+
+	public void setDomain(String domain) {
+		this.domain = domain;
+	}
+
+	public String getOwner() {
+		return owner;
+	}
+
+	public void setOwner(String owner) {
+		this.owner = owner;
+	}
+
+	@Override
+	public String toString() {
+		return "WebsiteEntity [wid=" + wid + ", name=" + name + ", webURL=" + webURL + ", since=" + since + ", domain="
+				+ domain + ", owner=" + owner + "]";
+	}
+
+}

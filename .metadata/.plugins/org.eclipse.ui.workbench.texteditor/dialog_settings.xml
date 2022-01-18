@@ -7,6 +7,8 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="package com.xworkz.tour;"/>
+			<item value="package com.xworkz.tour.dao;"/>
 			<item value="package com.xworkz.company.dao;"/>
 			<item value="package com.xworkz.company.entity;"/>
 		</list>

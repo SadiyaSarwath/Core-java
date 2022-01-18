@@ -1,0 +1,16 @@
+package com.xworkz.tour;
+
+import com.xworkz.tour.dao.WebsiteDAO;
+import com.xworkz.tour.dao.WebsiteDAOImpl;
+import com.xworkz.tour.entity.WebsiteEntity;
+
+public class WebsiteStarter {
+
+	public static void main(String[] args) {
+		WebsiteEntity we = new WebsiteEntity(1, "yahoo", "https://www.Yahoo.com", 1994, ".com", "Marissa Mayer");
+		WebsiteDAO dao = new WebsiteDAOImpl();
+		dao.add(we);
+
+	}
+
+}
