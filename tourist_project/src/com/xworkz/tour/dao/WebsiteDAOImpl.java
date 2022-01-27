@@ -5,6 +5,7 @@ import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
+import javax.persistence.PersistenceException;
 
 import com.xworkz.tour.entity.WebsiteEntity;
 import com.xworkz.tour.util.EMFUtil;
@@ -33,7 +34,7 @@ public class WebsiteDAOImpl implements WebsiteDAO {
 			}
 			manager.getTransaction().commit();
 
-		} catch (Exception e) {
+		} catch (PersistenceException e) {
 			e.printStackTrace();
 			manager.getTransaction().rollback();
 		}

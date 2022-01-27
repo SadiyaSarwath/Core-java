@@ -7,6 +7,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="application_project"/>
+			<item value="jpaEmf"/>
+			<item value="singletonEMF"/>
 			<item value="tourist_project"/>
 			<item value="company_details"/>
 		</list>
