@@ -43,8 +43,11 @@ public class SportsShopEntity implements Serializable {
 	private String createdBy;
 	@Column(name = "createdAt")
 	private LocalDateTime createdAt;
+	@Column(name = "updatedBy")
 	private String updatedBy;
+	@Column(name = "updatedAt")
 	private LocalDateTime updatedAt;
+
 	public SportsShopEntity(String firstname, String lastname, String password, String confirmPassword, String address,
 			long phoneNo, String emailId, int age, int pincode, String createdBy, LocalDateTime createdAt,
 			String updatedBy, LocalDateTime updatedAt) {
@@ -64,5 +67,4 @@ public class SportsShopEntity implements Serializable {
 		this.updatedAt = updatedAt;
 	}
 
-	
 }

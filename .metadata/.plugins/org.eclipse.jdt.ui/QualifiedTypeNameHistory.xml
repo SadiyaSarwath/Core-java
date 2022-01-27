@@ -51,13 +51,13 @@
     <fullyQualifiedTypeName name="javax.persistence.Table"/>
     <fullyQualifiedTypeName name="javax.persistence.PersistenceException"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityTransaction"/>
-    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="com.xworkz.shop.dao.SportsShopDAOImpl"/>
     <fullyQualifiedTypeName name="com.xworkz.shop.util.EMFUtil"/>
     <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
     <fullyQualifiedTypeName name="com.xworkz.shop.dto.SportsShopEntity"/>
-    <fullyQualifiedTypeName name="com.xworkz.shop.sportService.SportShopService"/>
-    <fullyQualifiedTypeName name="com.xworkz.shop.sportService.SportShopServiceImpl"/>
     <fullyQualifiedTypeName name="com.xworkz.shop.dao.SportsShopDAO"/>
     <fullyQualifiedTypeName name="com.sun.tools.doclint.Entity"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="com.xworkz.shop.sportService.SportShopService"/>
+    <fullyQualifiedTypeName name="com.xworkz.shop.sportService.SportShopServiceImpl"/>
 </qualifiedTypeNameHistroy>

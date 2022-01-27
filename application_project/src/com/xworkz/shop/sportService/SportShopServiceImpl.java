@@ -8,7 +8,6 @@ import com.xworkz.shop.dto.SportsShopEntity;
 
 public class SportShopServiceImpl implements SportShopService {
 	private SportsShopDAO dao;
-	boolean valid = true;
 
 	public SportShopServiceImpl(SportsShopDAO sportsDao) {
 
@@ -17,12 +16,12 @@ public class SportShopServiceImpl implements SportShopService {
 
 	@Override
 	public boolean validateAndSave(SportsShopEntity sportEntity) {
-
+		boolean valid = true;
 		if ((sportEntity.getFirstname() != null || sportEntity.getFirstname().length() >= 3)
 				&& sportEntity.getFirstname().length() <= 300) {
 			valid = true;
 		} else {
-			System.out.println("Name is invalid");
+			System.out.println("FirstName is invalid");
 			System.out.println(sportEntity.getFirstname().length());
 			valid = false;
 			return valid;
@@ -31,7 +30,7 @@ public class SportShopServiceImpl implements SportShopService {
 				&& sportEntity.getLastname().length() <= 300) {
 			valid = true;
 		} else {
-			System.out.println("Name is invalid");
+			System.out.println("LastName is invalid");
 			System.out.println(sportEntity.getLastname().length());
 			valid = false;
 			return valid;
@@ -41,7 +40,7 @@ public class SportShopServiceImpl implements SportShopService {
 				&& sportEntity.getPassword().length() <= 300) {
 			valid = true;
 		} else {
-			System.out.println("Name is invalid");
+			System.out.println("Password is invalid");
 			System.out.println(sportEntity.getPassword().length());
 			valid = false;
 			return valid;
@@ -51,7 +50,7 @@ public class SportShopServiceImpl implements SportShopService {
 				&& sportEntity.getConfirmPassword().length() <= 300) {
 			valid = true;
 		} else {
-			System.out.println("Name is invalid");
+			System.out.println("ConformPassword is invalid");
 			System.out.println(sportEntity.getConfirmPassword().length());
 			valid = false;
 			return valid;
@@ -61,7 +60,7 @@ public class SportShopServiceImpl implements SportShopService {
 				&& sportEntity.getAddress().length() <= 300) {
 			valid = true;
 		} else {
-			System.out.println("Name is invalid");
+			System.out.println("Address is invalid");
 			System.out.println(sportEntity.getAddress().length());
 			valid = false;
 			return valid;
@@ -70,7 +69,7 @@ public class SportShopServiceImpl implements SportShopService {
 		if ((sportEntity.getPhoneNo() != 0 || sportEntity.getPhoneNo() >= 3) && sportEntity.getPhoneNo() <= 300) {
 			valid = true;
 		} else {
-			System.out.println("Name is invalid");
+			System.out.println("PhoneNo is invalid");
 			System.out.println(sportEntity.getPhoneNo());
 			valid = false;
 			return valid;
@@ -80,7 +79,7 @@ public class SportShopServiceImpl implements SportShopService {
 				&& sportEntity.getEmailId().length() <= 300) {
 			valid = true;
 		} else {
-			System.out.println("Name is invalid");
+			System.out.println("EmailId is invalid");
 			System.out.println(sportEntity.getEmailId().length());
 			valid = false;
 			return valid;
@@ -89,7 +88,7 @@ public class SportShopServiceImpl implements SportShopService {
 		if ((sportEntity.getAge() != 0 || sportEntity.getAge() >= 3) && sportEntity.getAge() <= 300) {
 			valid = true;
 		} else {
-			System.out.println("Name is invalid");
+			System.out.println("Age is invalid");
 			System.out.println(sportEntity.getAge());
 			valid = false;
 			return valid;
@@ -98,7 +97,7 @@ public class SportShopServiceImpl implements SportShopService {
 		if ((sportEntity.getPincode() != 0 || sportEntity.getPincode() >= 3) && sportEntity.getPincode() <= 300) {
 			valid = true;
 		} else {
-			System.out.println("Name is invalid");
+			System.out.println("Pincode is invalid");
 			System.out.println(sportEntity.getPincode());
 			valid = false;
 			return valid;
@@ -107,7 +106,7 @@ public class SportShopServiceImpl implements SportShopService {
 				&& sportEntity.getCreatedBy().length() <= 300) {
 			valid = true;
 		} else {
-			System.out.println("Name is invalid");
+			System.out.println("CreatedBy is invalid");
 			System.out.println(sportEntity.getCreatedBy().length());
 			valid = false;
 			return valid;
@@ -116,7 +115,7 @@ public class SportShopServiceImpl implements SportShopService {
 		if ((sportEntity.getCreatedAt() != null)) {
 			valid = true;
 		} else {
-			System.out.println("name is invalid");
+			System.out.println("CreatedAt is invalid");
 			valid = false;
 			return valid;
 		}
@@ -124,7 +123,7 @@ public class SportShopServiceImpl implements SportShopService {
 				&& sportEntity.getUpdatedBy().length() <= 300) {
 			valid = true;
 		} else {
-			System.out.println("Name is invalid");
+			System.out.println("UpdatedBy is invalid");
 			System.out.println(sportEntity.getUpdatedBy().length());
 			valid = false;
 			return valid;
@@ -133,7 +132,7 @@ public class SportShopServiceImpl implements SportShopService {
 		if ((sportEntity.getUpdatedAt() != null)) {
 			valid = true;
 		} else {
-			System.out.println("name is invalid");
+			System.out.println("UpdatedAt is invalid");
 			valid = false;
 			return valid;
 		}
